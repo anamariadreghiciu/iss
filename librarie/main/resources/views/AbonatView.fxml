@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.14-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="biblioteca.biblioteca.controller.AbonatController">
+    <VBox alignment="CENTER" spacing="10">
+        <HBox alignment="CENTER" prefHeight="35.0" prefWidth="610.0" spacing="10">
+            <TextField fx:id="searchTextField" promptText="Cauta..." />
+            <Button onAction="#handleSearch" text="Cauta" />
+        </HBox>
+        <HBox spacing="10">
+            <TableView fx:id="cartiTableView" prefWidth="300">
+                <columns>
+                    <TableColumn fx:id="idColumn" text="ID" />
+                    <TableColumn fx:id="titluColumn" prefWidth="108.00000762939453" text="Titlu" />
+                    <TableColumn fx:id="autorColumn" prefWidth="110.00001525878906" text="Autor" />
+                </columns>
+            </TableView>
+            <TableView fx:id="cosTableView" prefWidth="300">
+                <columns>
+                    <TableColumn fx:id="cosIdColumn" text="ID" />
+                    <TableColumn fx:id="cosTitluColumn" prefWidth="100.0" text="Titlu" />
+                    <TableColumn fx:id="cosAutorColumn" prefWidth="118.66665649414062" text="Autor" />
+                </columns>
+            </TableView>
+        </HBox>
+        <HBox alignment="CENTER" spacing="10">
+            <Button onAction="#handleAdaugaInCos" text="Adauga in cos" />
+            <Button onAction="#handleInchiriaza" text="Inchiriaza" />
+            <Button onAction="#handleElimina" text="Elimina" />
+        </HBox>
+        <Button alignment="CENTER_RIGHT" onAction="#handleLogout" text="Logout" />
+    </VBox>
+</AnchorPane>

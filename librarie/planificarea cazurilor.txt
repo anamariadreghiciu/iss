@@ -1,0 +1,13 @@
+Iteratia 1
+- Login(bibliotecar/abonat)
+
+Iteratia 2
+- Vizualizare abonat(carti de imprumutat)
+- implementare cos de carti cu funtionalitati (adauga/elimina)
+- implementare imprumut
+
+Iteratia 3
+- Vizualizare imprumuturi
+- restituire imprumuturi
+- cautarea unui abonat si vizualizarea cartilor imprumutate in numele lui
+-logout

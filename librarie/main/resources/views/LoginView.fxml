@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="252.0" prefWidth="266.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/11.0.14-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="biblioteca.biblioteca.controller.LoginController">
+
+    <Label layoutX="103.0" layoutY="28.0" text="Autentificare" />
+
+    <Label layoutX="20.0" layoutY="76.0" text="Nume:" />
+    <TextField fx:id="usernameField" layoutX="81.0" layoutY="72.0" />
+
+    <Label layoutX="20.0" layoutY="119.0" text="Parolă:" />
+    <PasswordField fx:id="passwordField" layoutX="81.0" layoutY="115.0" />
+
+    <Button layoutX="86.0" layoutY="163.0" onAction="#handleAdminLogin" style="-fx-background-color: #eeacac;" text="Admin" />
+    <Button layoutX="166.0" layoutY="163.0" onAction="#handleUserLogin" style="-fx-background-color: #7272a6;" text="Login" />
+</AnchorPane>
